@@ -28,10 +28,10 @@ void loop() {
 
   // 画面描画
   //M5.Lcd.clear();
-  M5.Lcd.setCursor(0,0);
-
-  M5.Lcd.printf("Temp:\n %2.0f C\n",temperature);
-  M5.Lcd.printf("Humid:\n %2.0f",humidity);
+  M5.Lcd.setCursor(30,30);
+  M5.Lcd.printf("%2.0f C",temperature);
+  M5.Lcd.setCursor(30,120);
+  M5.Lcd.printf("%2.0f",humidity);
   M5.Lcd.println(" %");
 
   //M5.Lcd.drawString("o",100,0,1);
